@@ -49,3 +49,25 @@ const myFunction = function (){
     console.log("Namste World")
 }
 myFunction()
+
+
+// ++++++++++++++++++++++++++++++
+
+// Stack Memory (Primitive) [copy], Heap Memory (Non-Primitive) [reference]
+
+let myName = "Aakash Sharma"
+let anotherName = myName
+anotherName = "Shuma Gorath"
+console.log(myName)
+console.log(anotherName)
+
+let userOne = {
+    email: "user@google.com",
+    upi: "use@3$1"
+}
+let userTwo = userOne
+
+userTwo.email = "user2@ggg.com"
+
+console.log(userOne.email)
+console.log(userTwo.email)
