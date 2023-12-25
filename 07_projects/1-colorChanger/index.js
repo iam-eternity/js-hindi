@@ -17,6 +17,7 @@ buttons.forEach((button) => {
             break; 
             case 'yellow': body.style.backgroundColor = e.target.id
             break; 
+            case 'aqua': body.style.backgroundColor = e.target.id
         }
     })
 })
