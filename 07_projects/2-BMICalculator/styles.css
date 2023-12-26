@@ -1,13 +1,35 @@
+* {
+    font-family:Georgia, 'Times New Roman', Times, serif
+}
 nav {
     display: block;
     text-align: center;
     margin-top: 10px; 
+}
+h1 {
+    text-align: center;
+}
+form {
+    text-align: center;
+    padding: 2rem;
+}
+button {
+    padding: 5px;
+    border: solid black 2px;
 }
 .home {
     align-items: center;
     border : solid black 3px;
     border-radius: 5px;
 }
+p {
+    padding: 10px;
+    font-weight:bold
+
+}
 a {
     padding: 5px;
+  }
+#results {
+    padding: 10px;
   }
