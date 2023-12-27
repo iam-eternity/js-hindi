@@ -77,6 +77,6 @@ function newGame() {
         userInput.innerHTML = `${11 - numGuess}`
         userInput.removeAttribute('disabled')
         startOver.removeChild(p)
-        
+        playGame = true
     })
 }
