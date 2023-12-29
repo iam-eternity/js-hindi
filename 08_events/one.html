@@ -17,5 +17,44 @@
             <li><a style="color: aliceblue;" href="https://google.com" id="google">Google</a></li>
         </ul>
    </div>
+   <script>
+    // document.getElementById('owl').onclick = function() {
+    //     alert('wo hoo an Owl')
+    // } 
+
+    // attachEvent()
+    // jQuery - on
+
+    // type, timestamp, defaultPrevented, target, toElement, srcElement, currentTarget
+    // clientX, clientY, screenX, screenY
+    //altkey, ctrlkey, shiftkey, keyCode
+
+    // document.getElementById('owl').addEventListener ('click', (e) => { // also have third parameter which is false by default so we do not need to write it
+    //     console.log(e);
+    // },false) 
+    document.getElementById('images').addEventListener ('click', (e) => { // also have third parameter which is false by default so we do not need to write it
+        console.log("Clicked inside the ul");
+    },false) 
+    document.getElementById('owl').addEventListener ('click', (e) => { // also have third parameter which is false by default so we do not need to write it
+        console.log("Owl clicked");
+        // e.stopPropagation()
+    },false) 
+    document.getElementById('google').addEventListener('click', (e) => {
+        e.preventDefault
+        ()
+        e.stopPropagation()
+        console.log('Google clicked')
+    })
+    document.querySelector('#images').addEventListener('click', (e) => {
+        console.log(e.target.parentNode);
+        let removeIt = e.target.parentNode
+        if (e.target.tagName === 'IMG') {
+            console.log(e.target.id);
+            removeIt.parentNode.removeChild(removeIt)
+        }
+        // removeIt.remove()
+        
+    },false)
+   </script>
 </body>
 </html>
