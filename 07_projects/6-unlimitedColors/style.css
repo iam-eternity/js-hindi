@@ -18,6 +18,7 @@ button {
   border-radius: 8px;
 }
 .home {
+  text-decoration: none;
   align-items: center;
   border : solid black 3px;
   margin: 5px;
