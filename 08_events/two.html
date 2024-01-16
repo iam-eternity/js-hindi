@@ -6,6 +6,24 @@
     <title>Async Javascript</title>
 </head>
 <body>
-    
+    <h1>Aakash Sharma</h1>
+    <button id="stop">Stop</button>
+    <script>
+        setTimeout(() => {
+            console.log("Amatsu Mikaboshi");
+        },2000) // itni der ka time lo or uske baad print kr do 
+        const sayKorvac = function () {
+            console.log("I am Miachel Korvac");
+        }
+        setTimeout(sayKorvac, 2000);
+        const changeText = function () {
+            document.querySelector('h1').innerHTML = "CALL OF DUTY: BLACK OPS 3"
+        }
+        const changeMe = setTimeout(changeText, 2000)
+        document.querySelector('#stop').addEventListener('click', () => {
+            clearTimeout(changeMe)
+            console.log("STOPPED");
+        })
+        </script>
 </body>
 </html>

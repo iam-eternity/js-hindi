@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Async Javascript</title>
+</head>
+<body>
+    <h1>Franklin Richards</h1>
+    <button id="start">Start</button>
+    <button id="stop">Stop</button>
+    <script>
+        let intervalID; // We need to declare a variable outside function bcz if we decalare variable inside the function in the startbtn eventlistener then it's scope will be limited to that function only and we will not be able to use the clearIntervale method so it is declared outside any function
+        const sayDate = (str) => {
+            console.log(str, Date.now());
+        }
+        const startBtn = document.querySelector('#start')
+        startBtn.addEventListener('click', () => {
+            intervalID = setInterval(sayDate, 1000, "hi")
+        })
+        const stopBtn = document.querySelector('#stop')
+        stopBtn.addEventListener('click', () => {
+            clearInterval(intervalID)
+        })
+         // We can pass three parameters in the setInterval Method (not necessary to pass 3 para , it can work with 2 also)
+        
+    </script>
+</body>
+</html>
