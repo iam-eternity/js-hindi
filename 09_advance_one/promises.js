@@ -4,7 +4,7 @@ const promise1 = new Promise(function(resolve,  reject) {
     setTimeout(() => {
         console.log('Async task is complete');
         resolve()
-    },1000)
+    },5000)
 });
 console.log('HI');
 promise1.then(() => {
