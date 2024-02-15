@@ -8,5 +8,8 @@
 ( (name) => {
     // simple iffe or unnamed
     console.log(`DB connected Two ${name}`);
-} )("Aakash")
+} )("Aakash");
+(function name() {
+    console.log('Miachel Korvac');
+})();
 
